@@ -3,6 +3,10 @@
     "target": "ES2020",                  // JS version output
     "module": "CommonJS",                // Node uses CommonJS
     "rootDir": "./src",                  // Source files
+    "baseUrl": "./",                     // Base directory
+    "paths": {
+      "@/*": ["src/*"]                   // @/ maps to src/
+    },
     "outDir": "./dist",                  // Compiled files
     "strict": true,                      // Enable all strict checks
     "noImplicitAny": true,
